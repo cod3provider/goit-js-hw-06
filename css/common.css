@@ -40,6 +40,10 @@ img {
   flex-wrap: wrap;
 }
 
+.gallery-item {
+  width: 100%;
+}
+
 .gallery-item:not(:last-child) {
   margin-bottom: 20px;
 }
