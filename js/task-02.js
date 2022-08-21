@@ -9,18 +9,17 @@ const ingredients = [
 
 
 const createIngredientEl = function (elements) {
-  const createEl = elements.map(element => {
+  return elements.map(element => {
     const itemEl = document.createElement('li');
     itemEl.textContent = `${element}`;
     itemEl.classList.add('item');
 
     return itemEl;
   });
-
-  const ingredientsListEl = document.querySelector('#ingredients');
-  ingredientsListEl.append(...createEl);
-  return ingredientsListEl;
 }
+
+const ingredientsListEl = document.querySelector('#ingredients');
+ingredientsListEl.append(...createIngredientEl(ingredients));
 
 createIngredientEl(ingredients);
 
