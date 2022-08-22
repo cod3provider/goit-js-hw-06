@@ -22,13 +22,3 @@ const ingredientsListEl = document.querySelector('#ingredients');
 ingredientsListEl.append(...createIngredientEl(ingredients));
 
 createIngredientEl(ingredients);
-
-
-
-
-
-
-
-
-// console.log(createIngredientEl(ingredients))
-
