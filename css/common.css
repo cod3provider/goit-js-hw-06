@@ -26,3 +26,22 @@ button {
 li {
   list-style: none;
 }
+
+.gallery {
+  margin: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryItem {
+  margin: 10px;
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+.galleryImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
